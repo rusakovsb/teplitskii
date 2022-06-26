@@ -28,7 +28,14 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    line-height: normal;
     color: var(--grey);
+}
+
+*,
+*::before,
+*::after {   
+    box-sizing: border-box;
 }
 
 *:focus {   
@@ -210,15 +217,77 @@ button {
 }
 
 /*------------------------------------------*/
-/* Sections
+/* Section
 /*------------------------------------------*/
 
 .section {
     padding: 6rem 0;
 }
 
+/*------------------------------------------*/
+/* Special Offers
+/*------------------------------------------*/
+
 .special-offers {
     background: var(--grey-light-bg);
+}
+
+/*------------------------------------------*/
+/* Our Products
+/*------------------------------------------*/
+
+.our-products {
+    background: url(../images/our-products.jpg) center center / cover no-repeat;
+}
+
+.our-products-title {
+    color: #fff;
+}
+
+.our-products-description {
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Categories */
+
+.category-tile-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    color: #fff;
+    border: 0.125rem solid #fff;
+}
+
+.category-tile-link:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.category-tile-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: #fff;
+}
+
+.category-tile-title {
+    margin: 1.5rem 0 0 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.063rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.welcome-description {
+    line-height: 1.5;
 }
 
 /*------------------------------------------*/
@@ -226,7 +295,7 @@ button {
 /*------------------------------------------*/
 
 .item-slider {
-    margin: 0 1px;
+    padding: 0 1px;
 }
 
 .item-slider-header {
@@ -267,7 +336,6 @@ button {
 /*------------------------------------------*/
 
 .item-inner {
-    position: relative;
     background: #fff;  
     border: 1px solid var(--secondary-color);
 }
@@ -311,13 +379,20 @@ button {
     text-transform: uppercase;
     text-align: center;
     border: 0;
+    border-top: 1px solid var(--secondary-color);
     background-color: #fff;
-    color: #fff;
+    color: var(--secondary-color);
+    opacity: 0;
     transition: 0.2s ease;
 }
 
 .item:hover .item-add-to-cart-button {
+    opacity: 1;
+}
+
+.item-add-to-cart-button:hover {
     background-color: var(--secondary-color);
+    color: #fff;
 }
 
 /*------------------------------------------*/
@@ -387,6 +462,7 @@ label {
 /*------------------------------------------*/
 
 .footer {
+    padding: 6rem;
     background: var(--primary-color);
 }
 

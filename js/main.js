@@ -31,5 +31,5 @@ const itemSlider = new Swiper('.item-slider', {
 		  slidesPerView: 3,
 		  spaceBetween: 32,
 		},
-	  }
+	}
 })
