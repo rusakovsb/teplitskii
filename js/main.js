@@ -24,7 +24,7 @@ const itemSlider = new Swiper('.item-slider', {
 		  spaceBetween: 16,
 		},
 		768: {
-		  slidesPerView: 3,
+		  slidesPerView: 2,
 		  spaceBetween: 16,
 		},
 		1200: {
