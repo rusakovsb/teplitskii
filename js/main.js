@@ -9,17 +9,14 @@ const topSlider = new Swiper('.top-slider', {
 	autoplay: {
 		delay: 3000,
 	},
-	navigation: {
-		nextEl: '.slider-next',
-		prevEl: '.slider-prev',
-	},
 })
+
 const itemSlider = new Swiper('.item-slider', { 
 	loop: true,
 	speed: 500,
 	navigation: {
-		nextEl: '.slider-next',
-		prevEl: '.slider-prev',
+		nextEl: '.item-slider-nav-next',
+		prevEl: '.item-slider-nav-prev',
 	},
 	breakpoints: {
 		320: {
