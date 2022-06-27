@@ -249,9 +249,15 @@ button {
     color: #fff;
 }
 
-/* Categories */
+/* Category Menu */
 
-.category-tile-link {
+.category-menu {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.category-menu-item-link {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,12 +267,12 @@ button {
     border: 0.125rem solid #fff;
 }
 
-.category-tile-link:hover {
+.category-menu-item-link:hover {
     background: var(--secondary-color);
     color: #fff;
 }
 
-.category-tile-icon {
+.category-menu-item-icon {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -276,7 +282,7 @@ button {
     fill: #fff;
 }
 
-.category-tile-title {
+.category-menu-item-title {
     margin: 1.5rem 0 0 0;
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
@@ -285,6 +291,10 @@ button {
     text-transform: uppercase;
     line-height: 1;
 }
+
+/*------------------------------------------*/
+/* Welcome
+/*------------------------------------------*/
 
 .welcome-description {
     line-height: 1.5;
