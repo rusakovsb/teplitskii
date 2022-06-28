@@ -9,7 +9,7 @@ const topSlider = new Swiper('.top-slider', {
 	autoplay: {
 		delay: 3000,
 	},
-})
+});
 
 const itemSlider = new Swiper('.item-slider', { 
 	loop: true,
@@ -32,4 +32,18 @@ const itemSlider = new Swiper('.item-slider', {
 		  spaceBetween: 32,
 		},
 	}
-})
+});
+
+// Nav
+(function ($) {
+	$(".nav-toggle").click(function() {               
+        if(!$(this).hasClass("active")) {  
+            $(this).addClass("active");          
+            $(".nav-bar").fadeIn();
+        }
+        else {      
+            $(this).removeClass("active");      
+            $(".nav-bar").fadeOut()
+        }
+    });	
+})(jQuery);
