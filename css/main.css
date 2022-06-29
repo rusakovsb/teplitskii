@@ -559,10 +559,6 @@ label {
 
 @media (max-width: 992px) {
 
-    body {
-        padding: 3.5rem 0 0 0;
-    }
-
     .top-bar {
         position: fixed;
         z-index: 1000;
@@ -600,10 +596,6 @@ label {
 }
 
 @media (max-width: 768px) {
-
-    body {
-        padding: 2.5rem 0 0 0;
-    }
 
     .top-bar {
         padding: 0.5rem 0;
