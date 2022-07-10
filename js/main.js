@@ -32,6 +32,20 @@ const itemSlider = new Swiper('.item-slider', {
 	}
 });
 
+const itemGalleryThumbs = new Swiper('.item-gallery-thumbs', { 
+	speed: 500,
+	spaceBetween: 24,
+    slidesPerView: 4,
+});
+
+const itemGallery = new Swiper('.item-gallery', { 
+	speed: 500,
+	spaceBetween: 24,
+	thumbs: {
+		swiper: itemGalleryThumbs,
+	},
+});
+
 // Nav
 (function ($) {
 	$(".nav-toggle").click(function() {               

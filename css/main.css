@@ -29,7 +29,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    line-height: normal;
     color: var(--grey);
 }
 
@@ -67,22 +66,18 @@ img, svg {
 	height: auto;
 }
 
-button {
-    cursor: pointer;
-}
-
 /*------------------------------------------*/
 /* Header
 /*------------------------------------------*/
 
 .top-bar {
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     color: #fff;
     background: var(--primary-color);
 }
 
 .header-main {
-    padding: 4rem 0;    
+    padding: 3rem 0;   
 }
 
 /* Contacts */
@@ -175,7 +170,7 @@ button {
 
 .main-menu-link {
     display: block;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     position: relative;
     font-size: 0.875rem;
     text-transform: uppercase;
@@ -207,7 +202,7 @@ button {
 /*------------------------------------------*/
 
 .breadcrumbs {
-    margin: 4rem 0 0 0;
+    margin: 3rem 0 0 0;
     padding: 0;
     list-style: none;   
 }
@@ -422,11 +417,13 @@ button {
 
 .button {
     display: inline-block;
-    padding: 1rem 2rem;  
+    padding: 1rem 3rem;  
     font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
     transition: 0.2s ease;
 }
 
@@ -483,7 +480,7 @@ button {
 /*------------------------------------------*/
 
 .item-slider-header {
-    margin: 0 0 2rem 0;
+    margin: 0 0 3rem 0;
 }
 
 .item-slider-title {
@@ -516,7 +513,7 @@ button {
 }
 
 .item-slider-footer {
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
 }
 
 /*------------------------------------------*/
@@ -529,7 +526,7 @@ button {
 }
 
 .item-link {
-    padding: 2rem 0 0 0;
+    padding: 1.5rem 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -544,15 +541,15 @@ button {
 }
 
 .item-price {
-    margin: 2rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     font-size: 1.125rem;
     font-weight: 700;
     color: var(--accent);
 }
 
 .item-title {
-    margin: 1rem 0 2rem 0;
-    padding: 0 4rem;
+    margin: 1rem 0 1.5rem 0;
+    padding: 0 3rem;
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
@@ -561,7 +558,6 @@ button {
 
 .item-add-to-cart-button {
     width: 100%;
-    text-align: center;
     border: 0;
     border-top: 1px solid var(--secondary-color);
     opacity: 0;
@@ -574,6 +570,93 @@ button {
 .item-add-to-cart-button:hover {
     border: 0;
     border-top: 1px solid var(--secondary-color);
+}
+
+/*------------------------------------------*/
+/* Item details
+/*------------------------------------------*/
+
+.item-details-sku {
+    color: var(--primary-color);
+}
+
+.item-details-price-wrapper {
+    margin: 0 0 1.5rem 0;
+}
+
+.item-details-price {
+    display: inline-block;
+    margin: 0 1.5rem 0 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.item-details-old-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: line-through;
+    color: var(--secondary-color);
+}
+
+.item-details-description {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+    color: var(--primary-color);
+}
+
+.item-details-params {
+    margin: 0 0 3rem 0;
+    padding: 0;
+    list-style: none;
+    color: var(--primary-color);
+}
+
+.item-details-params-item:nth-child(n+2) {
+    margin: 0.5rem 0 0 0;
+}
+
+.item-details-params-label {
+    font-weight: 700;
+}
+
+.item-details-add-to-cart-button {
+    width: 100%;
+    font-size: 1.25rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.item-details-add-to-cart-button:hover {
+    width: 100%;
+    font-size: 1.25rem;
+    background-color: #fff;
+    color:  var(--secondary-color);
+}
+
+.item-details-delivery-methods {
+    margin: 6rem 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item-details-delivery-method:nth-child(n+2) {
+    margin: 0.5rem 0 0 0;
+}
+
+/* Gallery */
+
+.item-gallery {
+    margin: 0 0 1.5rem 0;
+}
+
+.item-gallery,
+.item-gallery-thumb {
+    border: 1px solid var(--secondary-color);
+}
+
+.item-gallery-thumb {
+    cursor: pointer;
 }
 
 /*------------------------------------------*/
